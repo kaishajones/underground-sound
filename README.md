@@ -1,68 +1,115 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Underground Sound
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project #2 - Overview 
 
-### `npm start`
+- **App Description**: The concept of this application to highlight underground rap music.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### OUR WHY
+To showcase a broder range of talent that often doesn't get depicted by mainstream outlets. To bring a diverse array of artists to the forfront. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## API and Data Sample
 
-### `npm test`
+https://api.spotify.com/v1/search?query=underground_rappers&type=track,artist&market=US&offset=5&limit=10
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` JSON {
+  "artists": {
+    "href": "https://api.spotify.com/v1/search?query=underground_rappers&type=artist&market=US&offset=5&limit=10",
+    "items": [],
+    "limit": 10,
+    "next": null,
+    "offset": 5,
+    "previous": "https://api.spotify.com/v1/search?query=underground_rappers&type=artist&market=US&offset=0&limit=10",
+    "total": 0
+  },
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=underground_rappers&type=track&market=US&offset=5&limit=10",
+    "items": [
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/02rRRxxYhqnItQOqmR6eDu"
+              },
+              "href": "https://api.spotify.com/v1/artists/02rRRxxYhqnItQOqmR6eDu",
+              "id": "02rRRxxYhqnItQOqmR6eDu",
+              "name": "Havoc Savage",
+              "type": "artist",
+              "uri": "spotify:artist:02rRRxxYhqnItQOqmR6eDu"
+            }
+```
 
-### `npm run build`
+## Wireframes
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://wireframepro.mockflow.com/view/M5dd55722a1f547f35bf44b79cb69b7c11593471119485
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- **MVP**: 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Find and use external Api 
+- Render Data to webpage: Artist Name, Album Title, Album Cover Art 
+- Render using React 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Post-MVP**: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Play Audio of song track(s)
+- Play Video
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Goals**: What you plan to accomplish for each day of the project week.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Schedule
 
-## Learn More
+|  Day | Deliverable | Status
+|---|---| ---|
+|June 29| Found Api / Created Reated Readme | Incomplete
+|June 30| Contect to Api and Render to DOM / Priority Matrix / Timeframes | Incomplete
+|July 1| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|July 2-3| Initial Clickable Model  | Incomplete
+|July 5| MVP | Incomplete
+|July 6| Present | Incomplete
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![alt text](my-app/screenshots/Wireframe.png "Project Schedule")
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Priority Matrix**: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+|  Priority | Matrix Status | 
+|---|---|
+|BLUE| High Priority 
+|GREEN| Medium Priority
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+![alt text](my-app/screenshots/Project_Schedule_Matrix.png "Priority Matrix")
 
-### Making a Progressive Web App
+- **Timeframes**: 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| HTML Structure | M | 2hrs| 3hrs | 3hrs |
+| Adding Form | H | 2hrs | 4hrs | 4hrs|
+| Working with API | H | 3hrs| 9hr | 9hrs |
+| Sort thru data | H | 4hrs| 7hrs | 7hrs |
+| Adding CSS | H | 30hrs| 12hrs | 12hrs |
+| Total | H | 41hrs| 35hrs | 35hrs |
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Code Snippet
 
-### Deployment
+Very proud of this code because....
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```
+CODE GOES HERE 
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Change Log
+- What I had to pivot 
+
+## SWOT Analysis: 
+- Strength: Have a great support system and plenty of resources. 
+
+- Weakness: Not knowing React as well as I would like. 
+
+- How will you overcome your weaknesses and threats? Ugh only the lord knows 
