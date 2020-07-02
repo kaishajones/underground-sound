@@ -70,7 +70,7 @@ https://wireframepro.mockflow.com/view/M5dd55722a1f547f35bf44b79cb69b7c115934711
 |July 5| MVP | Incomplete
 |July 6| Present | Incomplete
 
-![alt text](my-app/screenshots/Wireframe.png "Project Schedule")
+![alt text](images/Wireframe.png "Project Schedule")
 
 - **Priority Matrix**: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority.
 
@@ -81,7 +81,7 @@ https://wireframepro.mockflow.com/view/M5dd55722a1f547f35bf44b79cb69b7c115934711
 |GREEN| Medium Priority
 
 
-![alt text](my-app/screenshots/Project_Schedule_Matrix.png "Priority Matrix")
+![alt text](images/Project_Schedule_Matrix.png "Priority Matrix")
 
 - **Timeframes**: 
 
