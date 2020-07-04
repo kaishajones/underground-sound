@@ -45,13 +45,14 @@ class App extends Component {
   }
 
   render() {
+
     const { tracks, loading } = this.state
 
     if (loading) {
       return <div>Loading...</div>
     }
     return (
-      <h1>Underground Sound</h1>
+
       <ul>
         {tracks.map(track => (
           <li>
