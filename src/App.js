@@ -51,6 +51,7 @@ class App extends Component {
       return <div>Loading...</div>
     }
     return (
+      <h1>Underground Sound</h1>
       <ul>
         {tracks.map(track => (
           <li>
