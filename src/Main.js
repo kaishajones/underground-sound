@@ -14,16 +14,17 @@ class Main extends Component {
         <div>
           <h1>Underground Sound</h1>
           <ul className="header">
-            <li><a NavLink to='/'>Home</a></li>
-            <li><a NavLink to='/tracks'>Tracks</a></li>
-            <li><a NavLink to='/contact'>Contact</a></li>
+            <li><NavLink to='/'>Home</NavLink></li>
+            <li><NavLink to='/tracks'>Tracks</NavLink></li>
+            <li><NavLink to='/contact'>Contact</NavLink></li>
           </ul>
 
           <div className="content">
-            <Route exact='/' component={Home} />
-            <Route path='/Tracks' component={Tracks} />
-            <Route path='/Contact' component={Contact} />
+            <Route exact path='/' component={Home} />
+            <Route path='/tracks' component={Tracks} />
+            <Route path='/contact' component={Contact} />
           </div>
+
         </div>
       </HashRouter>
     )
