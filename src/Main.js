@@ -20,9 +20,9 @@ class Main extends Component {
           </ul>
 
           <div className="content">
-            <Route exact path='/' component={Home} />
-            <Route path='/tracks' component={Tracks} />
-            <Route path='/contact' component={Contact} />
+            <Route exact path="/" component={Home} />
+            <Route path="/tracks" component={Tracks} />
+            <Route path="/contact" component={Contact} />
           </div>
 
         </div>
