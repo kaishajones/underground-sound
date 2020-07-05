@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Main from "./Main";
+import App from "./App";
 import axios from "axios";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 

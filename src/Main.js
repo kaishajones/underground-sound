@@ -3,6 +3,7 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./Home";
 import Tracks from "./Tracks";
 import Contact from "./Contact";
+import "./index.css"
 
 class Main extends Component {
 
@@ -14,9 +15,9 @@ class Main extends Component {
         <div>
           <h1>Underground Sound</h1>
           <ul className="header">
-            <li><NavLink to='/'>Home</NavLink></li>
-            <li><NavLink to='/tracks'>Tracks</NavLink></li>
-            <li><NavLink to='/contact'>Contact</NavLink></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/tracks">Tracks</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
           </ul>
 
           <div className="content">
@@ -24,10 +25,9 @@ class Main extends Component {
             <Route path="/tracks" component={Tracks} />
             <Route path="/contact" component={Contact} />
           </div>
-
         </div>
       </HashRouter>
-    )
+    );
   }
 }
 export default Main;
