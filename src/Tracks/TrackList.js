@@ -10,25 +10,24 @@ class TrackList extends Component {
   render() {
 
     const { tracks, loading } = this.props
-    const select = document.querySelector('button').value
 
     if (loading) {
       return (
-        <div>Loading...</div>
+        <h1 id="logo">Loading...</h1>
       )
     }
     return (
       <main>
 
 
-        <h1 class="button">Track List</h1>
+        <h1 class="titles">Track List</h1>
 
-        <ul>
+        <ul class="track-list-container">
           {tracks.map(track => (
 
-            <li key={track.id}>
+            <li class="track-container" key={track.id}>
               <div class="cell cell-5">
-                <img src={track.album.images[2].url} />
+                <img class="album-art" src={track.album.images[1].url} />
                 <div><b>{track.name}</b></div>
                 <div>
                   {

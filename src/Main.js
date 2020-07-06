@@ -14,19 +14,21 @@ class Main extends Component {
 
       <HashRouter>
         <header id="box-1" class="box">
-          <h1 id="logo">Underground Sound</h1>
+
 
           <div>
             <ul class="header">
-              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/">Underground Sound</NavLink></li>
               <li><NavLink to="/tracks">Tracks</NavLink></li>
-              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
+
             </ul>
 
             <main class="content">
               <Route exact path="/" component={Home} />
               <Route path="/tracks" component={Tracks} />
               <Route path="/contact" component={Contact} />
+
             </main>
           </div>
         </header>

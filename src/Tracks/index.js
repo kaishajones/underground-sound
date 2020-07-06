@@ -8,7 +8,7 @@ import { Route, NavLink, HashRouter } from "react-router-dom";
 
 
 
-// const apiKey = process.env.REACT_APP_NPS_API_KEY; MUST MOVE TOKEN
+// setting variables to store client credentials and Oauth
 const apiUrl = "https://api.spotify.com/v1/search?query=lofi_hip-hop&type=track&market=US&offset=5&limit=10";
 const OauthUrl = "https://accounts.spotify.com/api/token";
 const client_id = '1245e44bb45b4653aa2af0acd26e31e5';
@@ -53,14 +53,5 @@ class App extends Component {
   }
 
 }
-
-// TrackList function was moved to it's own component page 
-
-//set login credentials
-// get access token
-// query search api
-// get list of tracks
-// render each track to page
-
 
 export default App;

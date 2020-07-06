@@ -4,7 +4,8 @@ class Home extends Component {
   render() {
     return (
       <main>
-        <p> Your source for underground rap music.</p>
+        <h1 id="logo">Underground Sound</h1>
+        <p id="home-text"> Your playlist for underground and lofi hip-hop music. Something you can study and vibe to.</p>
       </main>
     );
   }
