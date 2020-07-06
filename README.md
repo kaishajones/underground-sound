@@ -97,19 +97,34 @@ https://wireframepro.mockflow.com/view/M5dd55722a1f547f35bf44b79cb69b7c115934711
 
 ## Code Snippet
 
-Very proud of this code because....
+Very proud of this code because with out it, I wouldn't be able to access the api. 
 
 ```
-CODE GOES HERE 
+const base64credentials = btoa(client_id + ':' + client_secret)
+const OauthResponse = await axios.post(OauthUrl, 'grant_type=client_credentials',
+      {
+        headers: {
+          'content-type': 'application/x-www-form-urlencoded',
+          Authorization: `Basic ${base64credentials}`,
+        }
+      })
+    // Extract the accesss token from the response body
+    const token = OauthResponse.data.access_token
+    // Make a request to ge the data from Spotify using the access token just obtained.
+    const response = await axios.get(apiUrl, { headers: { Authorization: `Bearer ${token}` } })
+
 
 ```
 
 ## Change Log
-- What I had to pivot 
+- What I had to pivot, styling and not having enough time to add more data. 
+- Would like to learn how to access other user's personal playlist to create a more robust app full of a variety of content. People is the gold. They are the music and add diversity to the landscape.  
 
 ## SWOT Analysis: 
 - Strength: Have a great support system and plenty of resources. 
 
 - Weakness: Not knowing React as well as I would like. 
 
-- How will you overcome your weaknesses and threats? Ugh only the lord knows 
+- How will you overcome your weaknesses and threats? Ugh only the lord knows.
+- Acknowledgement and transparency. 
+- Asking for help.  
