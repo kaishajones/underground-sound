@@ -3,12 +3,14 @@ import React, { Component } from "react";
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <h2>Contact Us</h2>
-        <input type="text" placeholder="Name">Name</input>
-        <input type="text" placeholder="Email">Email</input>
+      <footer id="box-5">
+        <h2 className="titles">Contact Us</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Name" />
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Email" name="email" />
         <textarea type="text" placeholder="Write Us..."></textarea>
-      </div>
+      </footer>
     )
   }
 }

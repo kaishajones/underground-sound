@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 import Home from "./Home";
-import Tracks from "./Tracks";
+import Tracks from "./Tracks/index.js";
 import Contact from "./Contact";
+
 import "./index.css"
 
 class Main extends Component {
@@ -12,20 +13,23 @@ class Main extends Component {
 
 
       <HashRouter>
-        <div>
-          <h1>Underground Sound</h1>
-          <ul className="header">
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/tracks">Tracks</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
+        <header id="box-1" class="box">
+          <h1 id="logo">Underground Sound</h1>
 
-          <div className="content">
-            <Route exact path="/" component={Home} />
-            <Route path="/tracks" component={Tracks} />
-            <Route path="/contact" component={Contact} />
+          <div>
+            <ul class="header">
+              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/tracks">Tracks</NavLink></li>
+              <li><NavLink to="/">Home</NavLink></li>
+            </ul>
+
+            <main class="content">
+              <Route exact path="/" component={Home} />
+              <Route path="/tracks" component={Tracks} />
+              <Route path="/contact" component={Contact} />
+            </main>
           </div>
-        </div>
+        </header>
       </HashRouter>
     );
   }

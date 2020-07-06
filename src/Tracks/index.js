@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
 import axios from "axios"
-import Home from "./Home";
-import Tracks from "./Tracks";
-import Contact from "./Contact";
+import Home from "../Home";
+import TrackList from "./TrackList";
+import Contact from "../Contact";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 
 
 
 
 // const apiKey = process.env.REACT_APP_NPS_API_KEY; MUST MOVE TOKEN
-const apiUrl = "https://api.spotify.com/v1/search?query=underground_rappers&type=track&market=US&offset=5&limit=10";
+const apiUrl = "https://api.spotify.com/v1/search?query=lofi_hip-hop&type=track&market=US&offset=5&limit=10";
 const OauthUrl = "https://accounts.spotify.com/api/token";
 const client_id = '1245e44bb45b4653aa2af0acd26e31e5';
 const client_secret = '2dbb9d5e8295495794d95cd5bb62c8f9';
@@ -46,11 +45,12 @@ class App extends Component {
     })
   }
 
-
-
-
-  // the tracks was moved to its own component page 
-
+  render() {
+    const { tracks, loading } = this.state
+    return (
+      <TrackList tracks={tracks} loading={loading} />
+    )
+  }
 
 }
 
