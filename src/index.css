@@ -27,7 +27,7 @@ ul.header {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(66, 10, 119);
+  /*background-color: rgb(66, 10, 119);*/
   display: flex;
   justify-content: flex-end;
 }
@@ -51,7 +51,7 @@ li a {
   display: inline-block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 16px;
   text-decoration: none;
 }
 
@@ -77,8 +77,9 @@ img {
 #logo {
   color: white;
   font-size: 100pt;
-  padding: 20px;
+  padding: 300px;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .container {
