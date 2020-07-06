@@ -1,9 +1,10 @@
 # Underground Sound
 
+https://undergroundsound.netlify.app/#/
 
 ## Project #2 - Overview 
 
-- **App Description**: The concept of this application to highlight underground rap music.
+- **App Description**: The concept of this application to highlight underground rap and lofi music.
 
 ### OUR WHY
 To showcase a broder range of talent that often doesn't get depicted by mainstream outlets. To bring a diverse array of artists to the forfront. 
