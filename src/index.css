@@ -19,6 +19,7 @@ h1, h2, p, ul li {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   list-style-type: none;
+  font-size: 20pt;
 
 }
 
@@ -34,6 +35,8 @@ ul.header {
 
 .titles {
   color:#ffffff;
+  font-size: 50pt;
+  padding: 50px 0 50px 0;
 }
 
 .track-list-container {
@@ -77,7 +80,7 @@ img {
 #logo {
   color: white;
   font-size: 100pt;
-  padding: 300px;
+  padding: 300px 0 25px 0;
   font-family: Arial, Helvetica, sans-serif;
 
 }
